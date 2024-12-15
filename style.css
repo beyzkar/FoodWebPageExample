@@ -87,6 +87,38 @@ ul li.active a{
     color: #000;
 }
 
+.desert{
+    display: none;
+    top: 6%;
+    position: relative;
+}
+
+.desert ul{
+    position: absolute;
+}
+
+.main ul li:hover .desert{
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 45, 117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .desert ul{
+    display: block;
+    margin: 6px;
+}
+.main ul li:hover .desert ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: center;
+    border-radius: 0px;
+}
+
 .sub-menu{
     display: none;
     top: 6%;
@@ -118,3 +150,5 @@ ul li.active a{
     text-align: left;
     border-radius: 0px;
 }
+
+ 
